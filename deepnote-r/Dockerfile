@@ -7,7 +7,7 @@ RUN apt-get update \
    libudunits2-dev libgdal-dev libgeos-dev libproj-dev
 
 # Install the R libraries
-RUN R -e "install.packages(c('tidyverse', 'data.table', 'RSQLite', 'remotes', 'reticulate', 'igraph', 'plotly'), dependencies = T)"
+RUN R -e "install.packages(c('tidyverse', 'data.table', 'ExPanDaR', 'remotes', 'reticulate'), dependencies = T)"
 
 # Workaround for Java to install correctly
 RUN mkdir -p /usr/share/man/man1/
