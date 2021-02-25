@@ -7,7 +7,7 @@ RUN apt-get update \
    libudunits2-dev libgdal-dev libgeos-dev libproj-dev
 
 # Install the R libraries
-RUN R -e "install.packages(c('tidyverse', 'ExPanDaR', 'AER', 'GWmodel', 'McSpatial', 'rgeos', 'rgdal', 'sf', 'spanel', 'spsur', 'spatialprobit', 'skimr', 'spatialreg', 'spdep', 'spgwr', 'sphet', 'splm', 'tmap', 'viridis', 'ggspatial', 'remotes', 'reticulate', 'basetheme', 'barsurf', 'bivariate', 'BMS', 'ConvergenceClubs', 'dineq', 'educineq', 'ggridges', 'ggpointdensity', 'hdrcde', 'ineq', 'ineqJD', 'intoo', lorenz', 'margins', 'np', 'patchwork', 'pder', 'pdfCluster', 'RColorBrewer', 'strucchange', 'wbstats'), dependencies = T)"
+RUN R -e "install.packages(c('tidyverse', 'ExPanDaR', 'AER', 'GWmodel', 'McSpatial', 'rgeos', 'rgdal', 'sf', 'spanel', 'spsur', 'spatialprobit', 'skimr', 'spatialreg', 'spdep', 'spgwr', 'sphet', 'splm', 'tmap', 'viridis', 'ggspatial', 'remotes', 'reticulate', 'basetheme', 'barsurf', 'bivariate', 'BMS', 'ConvergenceClubs', 'dineq', 'educineq', 'ggridges', 'ggpointdensity', 'hdrcde', 'ineq', 'ineqJD', 'intoo', 'lorenz', 'margins', 'np', 'patchwork', 'pder', 'pdfCluster', 'RColorBrewer', 'strucchange', 'wbstats'), dependencies = T)"
 
 # Workaround for Java to install correctly
 RUN mkdir -p /usr/share/man/man1/
