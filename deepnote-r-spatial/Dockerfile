@@ -7,7 +7,7 @@ RUN apt-get update \
    libudunits2-dev libgdal-dev libgeos-dev libproj-dev
 
 # Install the R libraries
-RUN R -e "install.packages(c('tidyverse', 'ExPanDaR', 'AER', 'GWmodel', 'McSpatial', 'rgeos', 'rgdal', 'sf', 'spanel', 'spsur', 'spatialprobit', 'skimr', 'spatialreg', 'spdep', 'spgwr', 'sphet', 'splm', 'tmap', 'viridis', 'ggspatial', 'remotes', 'reticulate'), dependencies = T)"
+RUN R -e "install.packages(c('tidyverse', 'ExPanDaR', 'AER', 'basetheme', 'barsurf', 'bivariate', 'BMS', 'ConvergenceClubs', 'classInt', 'car', 'cluster', 'clustertend', 'doBy', 'dineq', 'educineq', 'factoextra', 'gdata', 'GGally', 'GISTools', 'GWmodel', 'ggridges', 'ggpointdensity', 'hdrcde', 'ineq', 'ineqJD', 'intoo', 'lorenz', 'lmtest', 'maptools', 'Metrics', 'margins', 'np', 'oglmx', 'patchwork', 'pder', 'pdfCluster', 'PerformanceAnalytics', 'plotrix', 'quickPlot', 'RColorBrewer', 'raster', 'rgeos', 'rgdal', 'sampling', 'shape', 'scales', 'sf', 'spanel', 'spsur', 'spatialprobit', 'skimr', 'spatialreg', 'spatstat', 'spatialEco', 'spdep', 'spgwr', 'sphet', 'splm', 'tripack', 'tmap', 'viridis', 'ggspatial', 'remotes', 'reticulate', 'wesanderson'), dependencies = T)"
 
 # Workaround for Java to install correctly
 RUN mkdir -p /usr/share/man/man1/
