@@ -25,3 +25,9 @@ After modifying the docker file run
 docker build -t quarcslab/deepnote-r-spatial:1.2 .
 
 docker push quarcslab/deepnote-r-spatial:1.2 
+
+
+
+## Packages to add
+
+ggmap
