@@ -22,4 +22,4 @@ docker push quarcslab/deepnote-julia:1.2
 
 
 ## Packages to add
-HDF5 HypothesisTests JLD JSON JuMP KernelDensity LIBSVM LightGraphs LsqFit MLBase MLDatasets Makie MatrixNetworks MultivariateStats NPZ NearestNeighbors Plots RDatasets
+CSV Clustering DataFrames DataStructures DecisionTree DelimitedFiles Distances Distributions Flux GLM GLMNet GLMakie GLPK HDF5 HypothesisTests JLD JSON JuMP KernelDensity LIBSVM LightGraphs LsqFit MLBase MLDatasets Makie MatrixNetworks MultivariateStats NPZ NearestNeighbors Plots RDatasets
