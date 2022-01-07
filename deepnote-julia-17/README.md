@@ -10,15 +10,16 @@ RUN wget https://julialang-s3.julialang.org/bin/linux/x64/1.6/julia-1.6.2-linux-
     rm julia-1.6.2-linux-x86_64.tar.gz && \
     julia  -e "using Pkg;pkg\"add IJulia LinearAlgebra\""
     
-ENV DEFAULT_KERNEL_NAME "julia-1.6"
+ENV DEFAULT_KERNEL_NAME "julia-1.7"
 
 ```
 After modifying the docker file run
 
-docker build -t quarcslab/deepnote-julia:1.2 .
+docker build -t quarcslab/deepnote-julia:1.7 .
 
-docker push quarcslab/deepnote-julia:1.2
+docker push quarcslab/deepnote-julia:1.7
 
+ MLBase MultivariateStats LinearAlgebra Distributions Plots StatsPlots VegaDatasets SparseArrays Images MAT  Econometrics
 
 
 ## Packages to add
